@@ -1,7 +1,7 @@
 const express = require("express");
 const contact = require("../controllers/contact");
+const blog = require("../controllers/blog");
 // const about = require("../controllers/about");
-// const blog = require("../controllers/blog");
 // const expertise = require("../controllers/expertise");
 // const scholarlyWork = require("../controllers/scholarlyWork");
 // const Books = require("../controllers/books");
@@ -14,17 +14,17 @@ const router = express.Router();
 router.get("/", contact.welcome);
 router.post("/createContact", contact.createContact);
 router.get("/getContact", contact.getContact);
+
+// for Blogs Routes
+router.post("/createBlog", blog.createBlog);
+router.patch("/updateBlog/:blogId", blog.updateBlog);
+router.delete("/deleteBlog/:blogId", blog.deleteBlog);
+router.get("/getAllBlogs", blog.getAllBlogs);
 // for About Routes
 // router.post("/createAbout", about.createAbout);
 // router.get("/getAbout", about.getAbout);
 // router.patch("/updateAbout/:aboutId", about.updateAbout);
 // router.delete("/deleteAbout/:aboutId", about.deleteAbout);
-
-// for Blogs Routes
-// router.post("/createBlog", blog.createBlog);
-// router.patch("/updateBlog/:blogId", blog.updateBlog);
-// router.delete("/deleteBlog/:blogId", blog.deleteBlog);
-// router.get("/getAllBlogs", blog.getAllBlogs);
 
 // for Expertise Routes
 // router.post("/createExpertise", expertise.createExpertise);
