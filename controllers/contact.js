@@ -1,6 +1,6 @@
 const Contact = require("../model/Contact");
 
-const Welcome = async (req, res) => {
+const welcome = async (req, res) => {
   res.send("Welcome to Xervises Apis");
 };
 
@@ -36,4 +36,4 @@ const getContact = async (req, res) => {
   }
 };
 
-module.exports = { createContact, getContact ,Welcome};
+module.exports = { createContact, getContact ,welcome};

@@ -77,4 +77,4 @@ const deleteAbout = async (req, res) => {
   }
 };
 
-module.exports = { createAbout, getAbout, updateAbout, deleteAbout, Welcome };
+module.exports = { createAbout, getAbout, updateAbout, deleteAbout };

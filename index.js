@@ -14,7 +14,7 @@ app.options("*", cors()); // Handle preflight requests
 app.use(cors());
 
 mongoose.connect(
-  "mongodb+srv://premierpain:Web786786@hassancluster0.q7vodwk.mongodb.net/KhubaibAliDb?retryWrites=true&w=majority"
+  "mongodb+srv://premierpain:Web786786@hassancluster0.q7vodwk.mongodb.net/xervises?retryWrites=true&w=majority"
 );
 
 const db = mongoose.connection;
