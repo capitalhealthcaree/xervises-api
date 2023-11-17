@@ -10,8 +10,8 @@ const contact = require("../controllers/contact");
 
 const router = express.Router();
 
-// Welcome
-// router.get("/", about.Welcome);
+Welcome
+router.get("/", contact.Welcome);
 
 // for Contact Routes
 router.post("/createContact", contact.createContact);
